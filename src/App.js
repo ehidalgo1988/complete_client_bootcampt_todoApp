@@ -11,6 +11,7 @@ import UpdateUser from "./screen/user/UpdateUser";
 import AllProduct from "./screen/product/AllProduct";
 import UpdateProduct from "./screen/product/UpdateProduct";
 import SingleProduct from "./screen/product/SingleProduct";
+import SingleUser from "./screen/user/SingleUser";
 
 axios.defaults.baseURL = process.env.REACT_APP_API;
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/create-user" element={<CreateUser />} />
           <Route path="/all-users" element={<AllUsers />} />
           <Route path="/user/update/:userid" element={<UpdateUser />} />
+          <Route path="/single-user/:userid" element={<SingleUser />} />
 
           {/* product routes */}
           <Route path="/create-product" element={<CreateProduct />} />

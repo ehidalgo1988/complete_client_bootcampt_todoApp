@@ -46,11 +46,11 @@ export default function Home() {
         </div>
         <div className="col-md-10">
           <h1 className="text-center">Our Users</h1>
-          <div className="row">
+          <div className="row ">
             {users?.map((user) => (
               <div key={user._id} className="col-3">
                 <Link to={`/single-user/${user._id}`}>
-                  <div className="card" style={{ width: "16rem" }}>
+                  <div className="card mb-4" style={{ width: "16rem" }}>
                     <img
                       style={{ height: "20rem" }}
                       src={user.avatar}
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <hr />
           <h2 className="text-center">Our Product </h2>
-          <div className="row">
+          <div className="row mb-2">
             {products?.map((product) => (
               <Link
                 to={`single-product/${product._id}`}

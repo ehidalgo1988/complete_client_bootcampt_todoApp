@@ -53,7 +53,7 @@ export default function UpdateUser() {
         toast.error(data.error);
       } else {
         toast.success("Update successful");
-        // navigate("/dashboard/user");
+        navigate("/");
       }
     } catch (error) {
       console.log(error);
@@ -101,7 +101,7 @@ export default function UpdateUser() {
               autoFocus
             />
             <button className="btn btn-primary " type="submit">
-              Submit
+              Update
             </button>
           </form>
         </div>

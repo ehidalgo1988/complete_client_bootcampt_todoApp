@@ -136,7 +136,7 @@ export default function UpdateProduct() {
                 type="text"
               />
             </div>
-            <button className="btn btn-primary mt-3">Submit</button>
+            <button className="btn btn-primary mt-3">Update</button>
           </form>
         </div>
       </div>

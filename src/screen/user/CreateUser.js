@@ -31,7 +31,7 @@ export default function CreateUser() {
         toast.error(data.error);
       } else {
         toast.success("Registration successful");
-        // navigate("/dashboard/user");
+        navigate("/");
       }
     } catch (error) {
       console.log(error);
